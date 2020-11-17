@@ -20653,7 +20653,7 @@ var render = function() {
       _c(
         "v-navigation-drawer",
         {
-          attrs: { absolute: "", temporary: "" },
+          attrs: { app: "", temporary: "" },
           model: {
             value: _vm.drawer,
             callback: function($$v) {
