@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ mix('css/app.css') }}" />
 
-    <title>{{env('APP_NAME')}}</title>
+    <title>Lavu Home page</title>
 </head>
 <body>
     <div id="app">
