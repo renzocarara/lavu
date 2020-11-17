@@ -34,8 +34,7 @@ export default {
             // leggo i dati via api call
             axios({
                 method: 'GET',
-                // url: 'https://lavu.herokuapp.com/api/rm',
-                url: 'http://localhost:8000/api/rm',
+                url: '/api/rm', // API locale all'interno di questa APP
             })
                 .then(response => {
                     this.handleSuccess(response);

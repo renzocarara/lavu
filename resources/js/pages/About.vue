@@ -4,9 +4,9 @@
         <v-card class="d-flex justify-center flex-column">
 
             <v-card-title>Purpose</v-card-title>
-                <v-card-text>
-                    This is a simple exercise to combine Laravel framework (BACKEND) with Vue framework (FRONTEND) in a single web application.
-                </v-card-text>
+            <v-card-text>
+                This is a simple exercise to combine Laravel framework (BACKEND) with Vue framework (FRONTEND) in a single web application.
+            </v-card-text>
 
             <v-card-title>How it works</v-card-title>
             <v-card-text>
@@ -17,7 +17,9 @@
                 that is the Vue "entry-point" (App.vue). <br>
                 App.vue uses the vue-router (through "&lt;view-router&gt;" tag) to render the vue component
                 according to the specified URL. <br>
-            <v-img class="my-2" alt="lavu flowchart" max-width="420" src="assets/laravelvue_flowchart.png"></v-img>
+            </v-card-text>
+                <v-img class="my-2" alt="lavu flowchart" max-width="420" src="assets/laravelvue_flowchart.png"></v-img>
+            <v-card-text>
                 The URL='/' (the root) will render the MainPage component.<br>
                 The URL='/about' will render the About component.<br>
                 The MainPage component makes an Axios call to a Laravel API.

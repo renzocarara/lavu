@@ -2134,6 +2134,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "About" // nome di questo componente
 
@@ -2188,8 +2190,8 @@ __webpack_require__.r(__webpack_exports__);
       // leggo i dati via api call
       axios({
         method: 'GET',
-        // url: 'https://lavu.herokuapp.com/api/rm',
-        url: 'http://localhost:8000/api/rm'
+        url: '/api/rm' // API locale all'interno di questa APP
+
       }).then(function (response) {
         _this.handleSuccess(response);
       })["catch"](function (error) {
@@ -20821,52 +20823,51 @@ var render = function() {
           _vm._v(" "),
           _c("v-card-text", [
             _vm._v(
-              "\n                This is a simple exercise to combine Laravel framework (BACKEND) with Vue framework (FRONTEND) in a single web application.\n            "
+              "\n            This is a simple exercise to combine Laravel framework (BACKEND) with Vue framework (FRONTEND) in a single web application.\n        "
             )
           ]),
           _vm._v(" "),
           _c("v-card-title", [_vm._v("How it works")]),
           _vm._v(" "),
-          _c(
-            "v-card-text",
-            [
-              _vm._v("\n            The dataflow starts from the web.php."),
-              _c("br"),
-              _vm._v(
-                '\n            At startup the Laravel router resolves the browser URL,\n            it doesn\'t matter the entered URL, the home.blade.php view is returned.\n            The blade contains a reference to the Vue instance (id="#app") that render the main Vue component,\n            that is the Vue "entry-point" (App.vue). '
-              ),
-              _c("br"),
-              _vm._v(
-                '\n            App.vue uses the vue-router (through "<view-router>" tag) to render the vue component\n            according to the specified URL. '
-              ),
-              _c("br"),
-              _vm._v(" "),
-              _c("v-img", {
-                staticClass: "my-2",
-                attrs: {
-                  alt: "lavu flowchart",
-                  "max-width": "420",
-                  src: "assets/laravelvue_flowchart.png"
-                }
-              }),
-              _vm._v(
-                "\n            The URL='/' (the root) will render the MainPage component."
-              ),
-              _c("br"),
-              _vm._v(
-                "\n            The URL='/about' will render the About component."
-              ),
-              _c("br"),
-              _vm._v(
-                "\n            The MainPage component makes an Axios call to a Laravel API.\n            According to the api.php file, the corresponding Laravel controller (rmController.php) is invoked\n            and the data is returned to the component via the Axios response.\n            For simplicity the Laravel controller retrieves data making a call to an external API, but,\n            commonly it should read from a DB. "
-              ),
-              _c("br"),
-              _vm._v(
-                "\n            The MainPage component display received data.\n        "
-              )
-            ],
-            1
-          ),
+          _c("v-card-text", [
+            _vm._v("\n            The dataflow starts from the web.php."),
+            _c("br"),
+            _vm._v(
+              '\n            At startup the Laravel router resolves the browser URL,\n            it doesn\'t matter the entered URL, the home.blade.php view is returned.\n            The blade contains a reference to the Vue instance (id="#app") that render the main Vue component,\n            that is the Vue "entry-point" (App.vue). '
+            ),
+            _c("br"),
+            _vm._v(
+              '\n            App.vue uses the vue-router (through "<view-router>" tag) to render the vue component\n            according to the specified URL. '
+            ),
+            _c("br")
+          ]),
+          _vm._v(" "),
+          _c("v-img", {
+            staticClass: "my-2",
+            attrs: {
+              alt: "lavu flowchart",
+              "max-width": "420",
+              src: "assets/laravelvue_flowchart.png"
+            }
+          }),
+          _vm._v(" "),
+          _c("v-card-text", [
+            _vm._v(
+              "\n            The URL='/' (the root) will render the MainPage component."
+            ),
+            _c("br"),
+            _vm._v(
+              "\n            The URL='/about' will render the About component."
+            ),
+            _c("br"),
+            _vm._v(
+              "\n            The MainPage component makes an Axios call to a Laravel API.\n            According to the api.php file, the corresponding Laravel controller (rmController.php) is invoked\n            and the data is returned to the component via the Axios response.\n            For simplicity the Laravel controller retrieves data making a call to an external API, but,\n            commonly it should read from a DB. "
+            ),
+            _c("br"),
+            _vm._v(
+              "\n            The MainPage component display received data.\n        "
+            )
+          ]),
           _vm._v(" "),
           _c("v-card-title", [_vm._v("Technologies")]),
           _vm._v(" "),
